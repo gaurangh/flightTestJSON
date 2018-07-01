@@ -47,7 +47,7 @@ span.priceValue { margin-bottom: 7px; font-size: 12px; }
 
 
 /* results list */
-section#resultSection { background: #f6f6f6; min-height: 490px; overflow: hidden; border-left: 1px solid #e3e3e3; }
+section#resultSection { background: #f6f6f6; min-height: 550px; overflow: hidden; border-left: 1px solid #e3e3e3; }
 .resultContainer { position: relative; }
 div#displayRoute { overflow: hidden; padding: 10px 30px; background: #fff; position: relative; }
 div.routePath { float: left; font-size: 20px; font-weight: 300; line-height: 60px; }
@@ -107,6 +107,7 @@ span.showAll { float: right; color: #0093ee; cursor: pointer; margin-top: 5px; }
 	div#displayRoute { padding: 10px 30px; }
 	aside#searchContainer { float: none; z-index: 2; width: 100%; }
 	.form-group input { width: 100%; box-sizing: border-box; }
+	section#resultSection { min-height: auto; }
 }
 @media screen and (max-width: 510px){
 	#title span { display: none; }
