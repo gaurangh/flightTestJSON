@@ -1,0 +1,123 @@
+body{ background: #fff; font-family: 'Open Sans', sans-serif; color: #606a6f; }
+p { margin: 0; padding: 0; }
+
+/* header */
+header{ height: 60px; padding: 15px 0px; /*margin-bottom: 20px; position: absolute; width: 100%; top: 0px; left: 0px; z-index: 2;*/ background-image: linear-gradient(to bottom, #6333a7, #623aab, #6041ae, #5f48b2, #5e4eb5); }
+header #logo { width: 60px; height: 60px; float: left; margin-right: 15px; margin-left: 30px; }
+header #logo img { width: 60px; height: auto; }
+header #title { font-size: 27px; line-height: 60px; color: #fff; letter-spacing: 0.5px; font-weight: 400; font-family: 'Roboto', sans-serif; }
+#title span { font-size: 10px; font-weight: 300; line-height: 20px; display: inline-block; font-family: 'Open Sans'; margin-left: 10px; text-transform: uppercase; border-left: 1px solid #fff; padding-left: 10px; vertical-align: middle; }
+
+
+/* main content */
+main#wrapper { overflow: hidden; border-bottom: 1px solid #e3e3e3;  }
+aside#searchContainer { float: left; width: 250px; background: #fff; }
+
+
+/* search form */
+div#searchFormContainer{ margin: 20px; }
+.tabCont { float: left; width: 100%; }
+form#searchForm { clear: both; border: 1px solid #e3e3e3; padding: 15px; }
+span.tab { font-size: 13px; display: block; border: 1px solid #e3e3e3;  -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px;  padding: 5px 15px; font-family: 'Roboto'; margin: 0; border-bottom: 0px; float: left; cursor: pointer; }
+span.tab.active { background: #0093ee; color: #fff; border-color: #0093ee; }
+.form-group { margin-bottom: 7px; position: relative; }
+.form-group label { font-size: 11px; display: block; margin-bottom: 5px; line-height: 16px; }
+.form-group input { font-size: 13px; line-height: 18px; padding: 3px 8px; width: 150px; text-overflow: ellipsis; color: #606a6f; }
+.form-group input:focus { outline: 0; }
+.form-group button { width: 100%; line-height: 30px; background: #0093ee; color: #fff; font-size: 13px; border: 0; border-radius: 2px; margin-top: 10px; cursor: pointer; }
+ul.autocomplete { margin: 0; padding: 0; display: none; position: absolute; width: 99%; background: #fff; z-index: 3; border: 1px solid #e2e2e2; left: 0px; top: 48px; box-shadow: 0 2px 10px 0 rgba(212, 212, 212, 0.49); }
+ul.autocomplete li { line-height: 22px; list-style: none; font-size: 12px; padding: 5px 10px; word-wrap: break-word; cursor: pointer; }
+ul.autocomplete li:hover{ background: #e2e2e2; }
+.retDateGroup { display: none; }
+
+
+/* range slider */
+div#rangeContainer { margin: 20px; }
+div#rangeContainer label { font-size: 13px; display: block; margin-bottom: 10px; line-height: 18px; }
+.slideContainer { width: 100%; }
+.slider { -webkit-appearance: none; appearance: none; width: 100%; height: 22px; background: #d3d3d3; outline: none;  opacity: 0.7;  -webkit-transition: .2s;  transition: opacity .2s; }
+.slider:hover { opacity: 1; }
+.slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 22px; height: 22px; background: #0093ee; cursor: pointer; }
+.slider::-moz-range-thumb { width: 22px; height: 22px; background: #0093ee; cursor: pointer; }
+.slideContainer span { font-size: 11px; display: inline-block; }
+.rangeEnd { float: right; }
+span.priceValue { margin-bottom: 7px; font-size: 12px; }
+
+
+
+
+/* results list */
+section#resultSection { background: #f6f6f6; min-height: 490px; overflow: hidden; border-left: 1px solid #e3e3e3; }
+.resultContainer { position: relative; }
+div#displayRoute { overflow: hidden; padding: 10px 30px; background: #fff; position: relative; }
+div.routePath { float: left; font-size: 20px; font-weight: 300; line-height: 60px; }
+div.routeDates { float: right; font-size: 16px; font-weight: 300; line-height: 60px; }
+.lhAdjust { line-height: 30px !important; }
+div.routeDates p { text-align: right; }
+div#resultList ul { margin: 20px 30px; padding: 0; }
+li.flightCard { list-style: none; padding: 20px; background: #fff; margin-bottom: 20px; border-radius: 4px; box-shadow: 0 2px 10px 0 rgba(212, 212, 212, 0.49); overflow: hidden; position: relative; }
+.leftBox { padding-right: 200px; }
+.rightBox { position: absolute; top: 5%; height: 90%; right: 20px; width: 200px; border-left: 2px dashed #d4d4d4; }
+div.logoCont { float: left; width: 72px; height: 72px; margin-right: 20px; margin-top: 16px; }
+img.logoImg { width: 100%; height: auto; }
+div.flightCont { float: left; font-weight: 300; }
+.flightCont label { text-transform: uppercase; font-size: 10px; letter-spacing: 0.5px; margin-bottom: 12px; display: block; width: 100%; }
+
+div.onwardDetails, div.returnDetails { overflow: hidden; }
+div.departureDetails { float: left; font-size: 24px; line-height: 30px; }
+div.arrivalDetails { float: left; font-size: 24px; line-height: 30px; }
+div.returnDetails { margin-top: 25px; }
+p.flightNo { font-size: 12px; line-height: 16px; margin-top: 10px; text-align: center; }
+div.departureDetails p.city, div.departureDetails p.flightNo  { text-align: right; }
+div.arrivalDetails p.city, div.arrivalDetails p.flightNo { text-align: left; }
+.flightPath { float: left; padding: 28px 30px 28px 0px; margin: 0 40px; }
+.flightPath p.routeImg { height: 2px; background: #60616f; width: 100px; line-height: 60px; float: left; position: relative; }
+.flightPath p.routeImg:after{ content: ""; background: url(../img/flightic.png) no-repeat 98% center; height: 25px; width: 25px; position: absolute; right: -32px; top: 50%; margin-top: -13px; background-size: 100% auto; }
+.priceCont { display: table; height: 100%; width: 100%; }
+.centerWrap { display: table-cell; vertical-align: middle; }
+p.totalPrice { font-size: 27px; line-height: 40px; text-align: right; word-wrap: break-word; }
+
+p.showIndividualPrices { color: #0093ee; font-size: 10px; text-align: right; line-height: 14px; cursor: pointer; }
+.individualPrices { display: none; }
+.individualPrices p { text-align: right; font-size: 13px; line-height: 20px; margin: 4px 0px; }
+
+button#bookFlight { line-height: 30px; background: #0093ee; color: #fff; font-size: 13px; border: 0; border-radius: 2px; margin-top: 10px; cursor: pointer; display: block; float: right; padding: 0 15px; }
+
+span.centerimg { width: 120px; height: 120px; background: #fff; border-radius: 50%; z-index: 4; text-align: center; margin: 0 auto; display: block; }
+.centerimg img { width: 80px; height: auto; margin-top: 20px; }
+p.message { text-align: center; line-height: 40px; font-size: 20px; margin: 100px auto 0; }
+#hamburger { display: none; cursor: pointer; width: 30px; height: 30px; float: left; margin-left: 20px; margin-top: 15px; }
+#hamburger svg path { opacity: 0.8; fill: #fff;}
+span.showAll { float: right; color: #0093ee; cursor: pointer; }
+
+@media screen and (max-width: 1000px){
+	.leftBox { padding-right: 140px; }
+	.rightBox { width: 140px; }
+}
+@media screen and (max-width: 940px){
+	div.logoCont { width: 40px; height: 40px; }
+	.rightBox { width: 100%; padding-top: 10px; position: relative; top: 0; right: 0; border-left: 0; border-top: 2px dashed #d4d4d4; }
+	p.totalPrice, p.showIndividualPrices, .individualPrices p { text-align: center; }
+	button#bookFlight { margin: 10px auto; float: none; }
+	.leftBox { padding: 0; }
+	div.onwardDetails, div.returnDetails { display: flex; justify-content: center; }
+}
+@media screen and (max-width: 767px){
+	#hamburger { display: block; }
+	div#displayRoute { padding: 10px 30px; }
+	aside#searchContainer { float: none; z-index: 2; width: 100%; }
+	.form-group input { width: 100%; box-sizing: border-box; }
+	.showAll { margin-top: 5px; }
+}
+@media screen and (max-width: 510px){
+	#title span { display: none; }
+	div#resultList ul { margin: 20px 10px; }
+	div#displayRoute { padding: 10px; }
+	.flightPath p.routeImg { width: 70px; }
+	div.departureDetails, div.arrivalDetails { font-size: 20px; }
+	div.logoCont { margin-top: 30px; }
+	.flightPath { margin: 0 10px; }
+	li.flightCard { padding: 15px; }
+	div.routeDates { font-size: 14px; line-height: 30px; }
+	div.routePath { font-size: 17px; line-height: 30px; }
+}

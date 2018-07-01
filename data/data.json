@@ -1,0 +1,287 @@
+{
+	"city_master" : [
+		{
+			"city_code": "DEL",
+			"city_name": "Delhi"
+		},
+		{
+			"city_code": "MUM",
+			"city_name": "Mumbai"
+		},
+		{
+			"city_code": "HYD",
+			"city_name": "Hyderabad"
+		},
+		{
+			"city_code": "PNQ",
+			"city_name": "Pune"
+		},
+		{
+			"city_code": "BLR",
+			"city_name": "Bangalore"
+		},
+		{
+			"city_code": "CHN",
+			"city_name": "Chennai"
+		}
+	],
+	"flight_master" : [
+		{
+			"id": "1",
+			"code": "AI-201",
+			"provider": "Air-India",
+			"depart_city": "DEL",
+			"arrive_city": "BLR",
+			"depart_time": "10:00",
+			"arrive_time": "12:00",
+			"logo": "airindia_logo.jpg",
+			"price": 9500
+		},
+		{
+			"id": "2",
+			"code": "JA-304",
+			"provider": "Jet Airways",
+			"depart_city": "DEL",
+			"arrive_city": "BLR",
+			"depart_time": "10:00",
+			"arrive_time": "13:00",
+			"logo": "jetairways_logo.jpg",
+			"price": 8700
+		},
+		{
+			"id": "3",
+			"code": "SPJ-101",
+			"provider": "SpiceJet",
+			"depart_city": "DEL",
+			"arrive_city": "BLR",
+			"depart_time": "10:00",
+			"arrive_time": "12:00",
+			"logo": "spicejet_logo.jpg",
+			"price": 8200
+		},
+		{
+			"id": "4",
+			"code": "AI-202",
+			"provider": "Air-India",
+			"depart_city": "MUM",
+			"arrive_city": "PNQ",
+			"depart_time": "2:00",
+			"arrive_time": "3:00",
+			"logo": "airindia_logo.jpg",
+			"price": 2500
+		},
+		{
+			"id": "5",
+			"code": "GO-110",
+			"provider": "Go Air",
+			"depart_city": "MUM",
+			"arrive_city": "PNQ",
+			"depart_time": "9:00",
+			"arrive_time": "10:00",
+			"logo": "goair_logo.jpg",
+			"price": 2900
+		},
+		{
+			"id": "6",
+			"code": "GO-112",
+			"provider": "Go Air",
+			"depart_city": "BLR",
+			"arrive_city": "DEL",
+			"depart_time": "14:00",
+			"arrive_time": "17:00",
+			"logo": "goair_logo.jpg",
+			"price": 7500
+		},
+		{
+			"id": "7",
+			"code": "SPJ-154",
+			"provider": "SpiceJet",
+			"depart_city": "BLR",
+			"arrive_city": "DEL",
+			"depart_time": "18:00",
+			"arrive_time": "22:00",
+			"logo": "spicejet_logo.jpg",
+			"price": 6200
+		},
+		{
+			"id": "8",
+			"code": "SPJ-102",
+			"provider": "SpiceJet",
+			"depart_city": "BLR",
+			"arrive_city": "DEL",
+			"depart_time": "17:00",
+			"arrive_time": "21:00",
+			"logo": "spicejet_logo.jpg",
+			"price": 6500
+		},
+		{
+			"id": "9",
+			"code": "GO-113",
+			"provider": "Go Air",
+			"depart_city": "BLR",
+			"arrive_city": "DEL",
+			"depart_time": "21:30",
+			"arrive_time": "23:30",
+			"logo": "goair_logo.jpg",
+			"price": 8600
+		},
+		{
+			"id": "10",
+			"code": "AI-203",
+			"provider": "Air-India",
+			"depart_city": "DEL",
+			"arrive_city": "PNQ",
+			"depart_time": "17:00",
+			"arrive_time": "19:00",
+			"logo": "airindia_logo.jpg",
+			"price": 4900
+		},
+		{
+			"id": "11",
+			"code": "AI-204",
+			"provider": "Air-India",
+			"depart_city": "DEL",
+			"arrive_city": "PNQ",
+			"depart_time": "21:00",
+			"arrive_time": "23:00",
+			"logo": "airindia_logo.jpg",
+			"price": 5600
+		},
+		{
+			"id": "12",
+			"code": "GO-114",
+			"provider": "Go Air",
+			"depart_city": "DEL",
+			"arrive_city": "PNQ",
+			"depart_time": "9:00",
+			"arrive_time": "12:00",
+			"logo": "goair_logo.jpg",
+			"price": 8600
+		},
+		{
+			"id": "13",
+			"code": "GO-115",
+			"provider": "Go Air",
+			"depart_city": "DEL",
+			"arrive_city": "PNQ",
+			"depart_time": "5:00",
+			"arrive_time": "8:00",
+			"logo": "goair_logo.jpg",
+			"price": 8100
+		},
+		{
+			"id": "14",
+			"code": "AI-205",
+			"provider": "Air-India",
+			"depart_city": "PNQ",
+			"arrive_city": "DEL",
+			"depart_time": "11:00",
+			"arrive_time": "14:00",
+			"logo": "airindia_logo.jpg",
+			"price": 7600
+		},
+		{
+			"id": "15",
+			"code": "GO-116",
+			"provider": "Go Air",
+			"depart_city": "PNQ",
+			"arrive_city": "DEL",
+			"depart_time": "17:00",
+			"arrive_time": "21:00",
+			"logo": "goair_logo.jpg",
+			"price": 6800
+		}
+	],
+	"seat_master": [
+		{
+			"code": "AI-201",
+			"available_seats": 50,
+			"booked_seats": 0,
+			"total_seats": 50
+		},
+		{
+			"code": "JA-304",
+			"available_seats": 40,
+			"booked_seats": 10,
+			"total_seats": 50
+		},
+		{
+			"code": "SPJ-101",
+			"available_seats": 20,
+			"booked_seats": 30,
+			"total_seats": 50
+		},
+		{
+			"code": "AI-202",
+			"available_seats": 2,
+			"booked_seats": 48,
+			"total_seats": 50
+		},
+		{
+			"code": "GO-110",
+			"available_seats": 45,
+			"booked_seats": 5,
+			"total_seats": 50
+		},
+		{
+			"code": "GO-112",
+			"available_seats": 5,
+			"booked_seats": 45,
+			"total_seats": 50
+		},
+		{
+			"code": "SPJ-154",
+			"available_seats": 20,
+			"booked_seats": 30,
+			"total_seats": 50
+		},
+		{
+			"code": "SPJ-102",
+			"available_seats": 10,
+			"booked_seats": 40,
+			"total_seats": 50
+		},
+		{
+			"code": "GO-113",
+			"available_seats": 1,
+			"booked_seats": 49,
+			"total_seats": 50
+		},
+		{
+			"code": "AI-203",
+			"available_seats": 38,
+			"booked_seats": 12,
+			"total_seats": 50
+		},
+		{
+			"code": "AI-204",
+			"available_seats": 15,
+			"booked_seats": 35,
+			"total_seats": 50
+		},
+		{
+			"code": "GO-114",
+			"available_seats": 3,
+			"booked_seats": 48,
+			"total_seats": 50
+		},
+		{
+			"code": "GO-115",
+			"available_seats": 22,
+			"booked_seats": 28,
+			"total_seats": 50
+		},
+		{
+			"code": "AI-205",
+			"available_seats": 17,
+			"booked_seats": 33,
+			"total_seats": 50
+		},
+		{
+			"code": "GO-116",
+			"available_seats": 42,
+			"booked_seats": 8,
+			"total_seats": 50
+		}
+	]
+}

@@ -1,0 +1,27 @@
+grunt / gulp : task automation tools. have plugins to use for doing tasks such as Linting, minifying, compiling sass and less to css etc.
+
+NPM(node package manager) : to download and setup dependency libraries for app and automatically resolving their dependencies. creates a package.json file which holds all the information for dependent libraries etc.
+
+Modernizer: browser wise feature and its support detection alongwith helper methods 
+
+HTML5 Boilerplate : a zip with a html, a default manifest, jquery and modernizer included, normalizer css  (similar to reset), icons, google analytics snippet etc already added in the html
+
+templating engines in js: handlebars, moustache.js, ejs, pug
+
+Bower: package manager like NPM. maintains , installs and updates project dependency libraries
+
+yeoman: The Yeoman workflow comprises three types of tools for improving your productivity and satisfaction when building a web app: the scaffolding tool (yo), the build tool (Gulp, Grunt etc) and the package manager (like npm and Bower).
+	
+		yo: scaffolds out a new application, writing your build configuration (e.g Gulpfile) and pulling in relevant build tasks and package manager dependencies (e.g npm) that you might need for your build.
+
+
+
+Google Web Starter KIT(https://github.com/google/web-starter-kit):  
+	collection of tools and files to quick start web developement. includes gulp for tasks, code linting, performance optimizations like minify and concatenate js css and html, sass support, live browser reloading, cross device synchronization, offline support using Service workers, pagespeed insights and a fully responsive html boilerplate
+
+
+browserSync: synchronised browser testing. a tool which automatically updates the page on multiple browsers when a change is detected in html,css or js.
+	- Your scroll, click, refresh and form actions are mirrored between browsers while you test.
+	- Browsers are automatically updated as you change HTML, CSS, images and other project files.
+	- Easily integrated with task runners like Grunt and Gulp, or included in other Node projects.
+	- Records your test URLs so you can push them back out to all devices with a single click.

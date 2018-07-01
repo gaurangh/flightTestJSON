@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flight Search Engine</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="res/css/normalize.css">
+    <link rel="stylesheet" href="res/css/style.css">
+  </head>
+  <body>
+    <header id="header">
+    	<span id="hamburger"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/></svg></span>
+      <div id="logo"><img src="res/img/logo.png" /></div>
+      <div id="title">FlightScan<span>quick search engine for flights</span></div>
+    </header>
+    <main id="wrapper">
+        <aside id="searchContainer">
+          <div id="searchFormContainer">
+            <div class="tabCont">
+                <span class="tab active">One Way</span>
+                <span class="tab">Return</span>
+              </div>
+            <form id="searchForm">
+              <div class="form-group">
+                <label>Enter Origin City</label>
+                <input type="text" data-key="origin_city" class="txtInput" name="txtSource" id="txtSource" placeholder="Search" required autocomplete="off" />
+                <ul class="autocomplete"></ul>
+              </div>
+              <div class="form-group">
+                <label>Enter Destination City</label>
+                <input type="text" data-key="destination_city" class="txtInput" name="txtDestination" id="txtDestination" placeholder="Search" required autocomplete="off" />
+                <ul class="autocomplete"></ul>
+              </div>
+              <div class="form-group">
+                <label>Onward Date</label>
+                <input data-key="onward_date" type="date" class="dtpInput" name="dtpOnward" required />
+              </div>
+              <div class="form-group retDateGroup">
+                <label>Return Date</label>
+                <input data-key="return_date" type="date" class="dtpInput" name="dtpReturn" />
+              </div>
+              <div class="form-group">
+                <label>Select No. of Passengers</label>
+                <input type="number" data-key="passengers" class="txtInputNum" name="txtPassCount" placeholder="Passengers (max 6)" min="1" max="6" required autocomplete="off" />
+              </div>
+              <div class="form-group">
+                <button type="submit" value="Search">Search</button>
+              </div>
+            </form>
+          </div>
+          <div id="rangeContainer">
+          	<label>Refine Results By Price:</label>
+          	<div class="slideContainer">
+          	  <span class="priceValue">Flights below &#x20b9; 1,000</span><span class="showAll">Show All</span>
+			  <input type="range" min="1000" max="20000" step="1000" value="1000" class="slider" id="priceFilterRange">
+			  <span class="rangeStart">&#x20b9; 1,000</span>
+			  <span class="rangeEnd">&#x20b9; 20,000</span>
+			</div>
+          </div>
+        </aside>
+        <section id="resultSection">
+          <div class="resultContainer">
+          </div>
+        </section>
+    </main>
+	<script src="scripts/jQuery.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
