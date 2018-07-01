@@ -157,8 +157,7 @@ let handler = {
 			else if(flightArray.length > 0) { // else if only onward
 				handler.printResults(formData, is_return, flightArray);
 			}
-			else $('.resultContainer').html('<p class="message"><span class="centerimg"><img src="res/img/centericon.png" /></span><span>No Flight Records Found</span></p>');
-			
+			else $('.resultContainer').html('<p class="message"><span class="centerimg"><img src="res/img/centericon.png" /></span><span>No Flight Records Found</span></p>');	
 		}
 	},
 	"printResults": function(formData, is_return, flightArray, flightArrayReturn){
@@ -220,6 +219,7 @@ let handler = {
 		}
 
 		$('.resultContainer').html(htm);
+		$('#rangeContainer').show();
 	},
 	"loadAutoComplete": function(data){
 		if(!!data){

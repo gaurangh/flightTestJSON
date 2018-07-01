@@ -32,7 +32,7 @@ ul.autocomplete li:hover{ background: #e2e2e2; }
 
 
 /* range slider */
-div#rangeContainer { margin: 20px; }
+div#rangeContainer { margin: 20px; display: none; }
 div#rangeContainer label { font-size: 13px; display: block; margin-bottom: 10px; line-height: 18px; }
 .slideContainer { width: 100%; }
 .slider { -webkit-appearance: none; appearance: none; width: 100%; height: 8px; background: #d3d3d3; outline: none;  opacity: 0.7;  -webkit-transition: .2s;  transition: opacity .2s; }
@@ -47,7 +47,7 @@ span.priceValue { margin-bottom: 7px; font-size: 12px; }
 
 
 /* results list */
-section#resultSection { background: #f6f6f6; min-height: 550px; overflow: hidden; border-left: 1px solid #e3e3e3; }
+section#resultSection { background: #f6f6f6; min-height: 432px; overflow: hidden; border-left: 1px solid #e3e3e3; }
 .resultContainer { position: relative; }
 div#displayRoute { overflow: hidden; padding: 10px 30px; background: #fff; position: relative; }
 div.routePath { float: left; font-size: 20px; font-weight: 300; line-height: 60px; }
