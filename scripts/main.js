@@ -89,7 +89,6 @@ let handler = {
 			$('li.flightCard').show();
 			$('#priceFilterRange').val('1000'); // reset filter
 		});
-
 	},
 	"loadJSON" : function(url, callback) {   
 		let xreq = new XMLHttpRequest();
